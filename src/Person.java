@@ -20,6 +20,16 @@ public class Person {
 		myInterests = new ArrayList <Subject>();
 	}
 	
+	public Person(String fName, String lName, boolean isLearner, boolean isTutor, int bilkentID) {
+		this.fName = fName;
+		this.lName = lName;A
+		this.isLearner = isLearner;
+		this.isTutor = isTutor;
+		this.bilkentID = bilkentID;
+		myContact = new Contact();
+		myInterests = new ArrayList <Subject>();
+	}
+	
 	public void addContact(String phone, String email) {
 		myContact = new Contact(phone, email);
 	}
